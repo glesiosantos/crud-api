@@ -1,6 +1,6 @@
 import { DataSource } from "typeorm";
 
-const PostgresDataSource = new DataSource({
+const AppDataSource = new DataSource({
     type: "postgres",
     host: "localhost",
     port: 5432,
@@ -14,3 +14,5 @@ const PostgresDataSource = new DataSource({
         './src/migrations/**/*.ts'
     ]
 })
+
+export default AppDataSource
